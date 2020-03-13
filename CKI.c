@@ -1,3 +1,17 @@
+/*******************************************************************************
+* Copyright (C) 2020 TUSUR FB
+* File              : Dispmean.c
+* Compiler          : Microsoft Visual Studio 2019
+* Version           : 16.4
+* Created File      : 20.02.2020
+* Last modified     : 12.03.2020
+* Support mail      : tsimnbalovkirill@bk.ru ( Tsimbalov K.I.)
+*
+* Target MCU        : MDR1986
+*
+* Description       : The program which calculates dispersion and mean
+*                   :
+*******************************************************************************/
 #include <stdio.h>
 #include <math.h>
 #include <locale.h>
@@ -38,11 +52,11 @@ float mean(float c)
 }
 int main()
 {
-	setlocale(LC_ALL, "Rus");
+	setlocale(LC_ALL, "Rus");e
 	float disp, means;
 	disp = dispersion(A);
 	means = mean(d);
-	printf("\tДисперсия равна:%5.4f", disp);
-	printf("\n\tСреднеквадратическое отклонение равно:%5.4f", means);
+	printf("\tDispersion is:%5.4f", disp);
+	printf("\n\tMean is:%5.4f", means);
 	return 0;
 }
