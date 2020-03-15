@@ -52,7 +52,6 @@ float mean(float c)
 }
 int main()
 {
-	setlocale(LC_ALL, "Rus");e
 	float disp, means;
 	disp = dispersion(A);
 	means = mean(d);
