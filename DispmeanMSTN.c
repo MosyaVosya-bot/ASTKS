@@ -4,7 +4,7 @@
 * Compiler          : NetBeans 
 * Version           : 8.2
 * Created File      : 29.03.2020
-* Last modified     : 29.03.2020
+* Last modified     : 29.04.2020
 * Support mail      : tsimnbalovkirill@bk.ru ( Tsimbalov K.I.)
 *
 * Target MCU        : MDR1986
@@ -70,10 +70,16 @@ int main(int argc, char *argv[])
             printf("\tDispersion is:%5.4f", disp);
             printf("\n\tMean is:%5.4f", means);
         
-            for (int i=0;i<10;++i){
+            for (int i=0;i<disp;++i){
             LED_SetGreenState(TURN_ON); 
             Delay (1000); 
             LED_SetGreenState(TURN_OFF); 
+            Delay (1000);
+            }
+            for (int i=0;i<means;++i){
+            LED_SetRedState(TURN_ON); 
+            Delay (1000); 
+            LED_SetRedState(TURN_OFF); 
             Delay (1000);
             }
         }   
